@@ -1,7 +1,7 @@
 # MRF-HSRM / Spectral-Spatial Classification of HyperSpectral Images
 
 
-This repository contains the code for the paper:
+This repository contains the Matlab code for the paper:
 
 ["Integrating Hierarchical Segmentation Maps With MRF Prior for Classification of Hyperspectral Images in a Bayesian Framework," 
 M. Golipour, H. Ghassemian, and F. Mirzapour, IEEE Trans. on Geosci. Remote Sens., Agu.2015.](https://ieeexplore.ieee.org/abstract/document/7230271/)
