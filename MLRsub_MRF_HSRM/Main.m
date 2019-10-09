@@ -5,14 +5,14 @@
 
 %%
 clear;clc;
-addpath '..\Lib\GCmex'
-addpath '..\Lib\MLR'
-addpath '..\Lib\Funcs'
+addpath '.\Lib\GCmex'
+addpath '.\Lib\MLR'
+addpath '.\Lib\Funcs'
 
-load('..\Data\gtm')
-load('..\Data\HSI')
-%load('..\Data\train') 
-load('..\Data\Trains.mat')
+load('.\Data\gtm')
+load('.\Data\HSI')
+%load('.\Data\train') 
+load('.\Data\Trains.mat')
 train = Trains(:,:,1);
 
 clear Trains
