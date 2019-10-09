@@ -13,12 +13,13 @@ addpath '.\Lib\Funcs'
 
 % load the hyperspectral image
 load('.\Data\Salinas')
+HSI = salinas;
 
 % load the ground truth 
-gtm = load('.\Data\gtm')
+load('.\Data\gtm')
 
 % load the training samples
-Trains = load('.\Data\Trains.mat')
+load('.\Data\Trains')
 train = Trains(:,:,1);
 %train = load('.\Data\train')
 
