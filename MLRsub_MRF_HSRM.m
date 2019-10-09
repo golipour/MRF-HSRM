@@ -9,11 +9,16 @@ addpath '.\Lib\GCmex'
 addpath '.\Lib\MLR'
 addpath '.\Lib\Funcs'
 
-load('.\Data\gtm')
-load('.\Data\HSI')
-%load('.\Data\train') 
-load('.\Data\Trains.mat')
+% load the hyperspectral image
+load('.\Data\Salinas')
+
+% load the ground truth 
+gtm = load('.\Data\gtm')
+
+% load the training samples
+Trains = load('.\Data\Trains.mat')
 train = Trains(:,:,1);
+%train = load('.\Data\train')
 
 clear Trains
 
