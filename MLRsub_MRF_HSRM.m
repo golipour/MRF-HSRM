@@ -13,13 +13,12 @@ addpath '.\Lib\Funcs'
 load('.\Data\Salinas')
 
 % load the ground truth 
-gtm = load('.\Data\gtm')
+load('.\Data\gtm')
 
 % load the training samples
-Trains = load('.\Data\Trains.mat')
+load('.\Data\Trains')
 train = Trains(:,:,1);
 %train = load('.\Data\train')
-
 clear Trains
 
 %% Parameters ---- (for more information about these parameters setting refere to the paper)
@@ -36,8 +35,8 @@ beta = 2;  % beta = 0 -> pixel-wise classifier
 
 %% PCA -----------------------------
 fprintf('PCA ... ');
-[Nx Ny Nz] = size(HSI);
-X = reshape(HSI,[],Nz);
+[Nx Ny Nz] = size(salinas);
+X = reshape(salinas,[],Nz);
 X = PCA_MG(X,Nf);
 Im = reshape(X,Nx,Ny,Nf);
 
@@ -79,7 +78,7 @@ clear RR
 %% MLRsub -------------------------------
 fprintf('MLRsub Classification ... ');
 
-X = reshape(HSI,[],Nz);
+X = reshape(salinas,[],Nz);
 
 train_label = nonzeros(train);
 train_data = X(train~=0,:);
@@ -103,7 +102,7 @@ figure('Name', 'MLRsub pix-wise classifier');imshow(label2rgb(double(cc)));
 str = sprintf('don! elapsedTime = %.1fsec ', elapsedTime);fprintf(str);
 str = sprintf('OA=%.2f \n\n',OA*100);fprintf(str);
 
-clear HSI train_data
+clear salinas train_data
 
 %% MLRsub-MLL  ------------------------------
 fprintf('MLL Regularization ...\n');
