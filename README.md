@@ -7,7 +7,7 @@ This repository contains the Matlab code for the paper:
 M. Golipour, H. Ghassemian, and F. Mirzapour, IEEE Trans. on Geosci. Remote Sens., Agu.2015.](https://ieeexplore.ieee.org/abstract/document/7230271/)
 
 
-### Hint: the Hyperspectral image file for this code is too large (~26 Mb) to be uploaded on Github. For this code to work you need to download the file from [here](http://www.ehu.eus/ccwintco/uploads/f/f1/Salinas.mat), name it "HSI.mat" and put in insde the Data folder.  
+### Hint: the Hyperspectral image file for this code is too large (~26 Mb) to be uploaded on Github. For this code to work you need to download the file from [here](http://www.ehu.eus/ccwintco/uploads/f/f1/Salinas.mat), name it "HSI.mat" and put it insde the Data folder.  
 
 Please cite the following papers if you use the respective code in this repository as part of a published research project.
 
