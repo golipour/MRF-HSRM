@@ -11,6 +11,7 @@ addpath '.\Lib\Funcs'
 
 % load the hyperspectral image
 load('.\Data\Salinas')
+HSI = salinas;
 
 % load the ground truth 
 load('.\Data\gtm')
@@ -35,8 +36,8 @@ beta = 2;  % beta = 0 -> pixel-wise classifier
 
 %% PCA -----------------------------
 fprintf('PCA ... ');
-[Nx Ny Nz] = size(salinas);
-X = reshape(salinas,[],Nz);
+[Nx Ny Nz] = size(HSI);
+X = reshape(HSI,[],Nz);
 X = PCA_MG(X,Nf);
 Im = reshape(X,Nx,Ny,Nf);
 
@@ -78,7 +79,7 @@ clear RR
 %% MLRsub -------------------------------
 fprintf('MLRsub Classification ... ');
 
-X = reshape(salinas,[],Nz);
+X = reshape(HSI,[],Nz);
 
 train_label = nonzeros(train);
 train_data = X(train~=0,:);
@@ -102,7 +103,7 @@ figure('Name', 'MLRsub pix-wise classifier');imshow(label2rgb(double(cc)));
 str = sprintf('don! elapsedTime = %.1fsec ', elapsedTime);fprintf(str);
 str = sprintf('OA=%.2f \n\n',OA*100);fprintf(str);
 
-clear salinas train_data
+clear HSI train_data
 
 %% MLRsub-MLL  ------------------------------
 fprintf('MLL Regularization ...\n');
