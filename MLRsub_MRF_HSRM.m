@@ -1,4 +1,4 @@
-%% MLRsub_MRf_HSRM by Meysam Golipour 2015, contact meysam.golipour@modares.ac.ir or miusay@gmail.com
+%% MLRsub_MRF_HSRM by Meysam Golipour 2015, contact meysam.golipour@modares.ac.ir or miusay@gmail.com
 % M. Golipour, H. Ghassemian, and F. Mirzapour, "Integrating Hierarchical Segmentation Maps
 % With MRF Prior for Classification of Hyperspectral Images in a Bayesian Framework," IEEE
 % Trans. on Geosci. Remote Sens., Agu.2015.
