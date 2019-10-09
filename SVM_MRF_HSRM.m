@@ -5,16 +5,16 @@
 
 %%
 clear;clc;
-addpath '..\Lib\libsvm-3.17';
-addpath '..\Lib\libsvm-3.17\matlab';
-addpath '..\Lib\libsvm-3.17\windows';
-addpath '..\Lib\GCmex'
-addpath '..\Lib\Funcs'
+addpath '.\Lib\libsvm-3.17';
+addpath '.\Lib\libsvm-3.17\matlab';
+addpath '.\Lib\libsvm-3.17\windows';
+addpath '.\Lib\GCmex'
+addpath '.\Lib\Funcs'
 
-load('..\Data\gtm')
-load('..\Data\HSI')
-%load('..\Data\train') 
-load('..\Data\Trains.mat')
+load('.\Data\gtm')
+load('.\Data\HSI')
+%load('.\Data\train') 
+load('.\Data\Trains.mat')
 train = Trains(:,:,1);
 
 clear Trains
