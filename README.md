@@ -9,7 +9,7 @@ M. Golipour, H. Ghassemian, and F. Mirzapour, IEEE Trans. on Geosci. Remote Sens
 
 ### Hint: For this code to work you need to download the "Salinas.mat" file from [here](http://www.ehu.eus/ccwintco/uploads/f/f1/Salinas.mat) and put it insde the `Data` folder.  
 
-![sample output][sample-result.jpg]
+![sample output](sample-result.jpg)
 
 Please cite the following papers if you use the respective code in this repository as part of a published research project.
 
